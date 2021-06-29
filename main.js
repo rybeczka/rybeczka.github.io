@@ -35,6 +35,15 @@ $(document).ready(function () {
             }),
 
 
+        lyrMaz = L.tileLayer.wms("http://localhost:8080/geoserver/projekt_ATE/wms",
+            {
+                layers: "projekt_ATE:mazowieckie",
+                format: 'image/png',
+                transparent: 'true',
+                version: '1.1.1'
+            }),
+
+
 
         mymap.addLayer(lyrOSM);
 
@@ -55,7 +64,8 @@ $(document).ready(function () {
         // "Gminy": lyrPRG,
         'Orto': lyrGoogleSat,
         "Ortofotomapa": lyrORTO,
-        "sozologiczna": lyrSozo
+        "sozologiczna": lyrSozo,
+        "mazowieckie": lyrMaz,
 
     };
     L.control.layers(baseMaps).addTo(mymap);

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="OPIS" content="Strona internetrowa powstała na potrzeby zajęć z Programowania Geoprotali" />
+	<meta name="keywords" content="Geoportal" />
+	<meta name="author" content="Klaudia RYBACZEK" />
+	<title>Geoportal</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans&amp;subset=latin-ext" rel="stylesheet" />
+	<!-- czcionki Open Sans Lato Regular 400 i 700 italic -->
+	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="lib/leaflet/leaflet.css">
+</head>
+
+<body>
+
+	<header>
+		<div id="logotyp">
+			<h1 class="logo">
+				PROGRAMOWANIE GEOPORTALI
+			</h1>
+		</div>
+	</header>
+
+	<nav>
+		<ul class="menu">
+			<li><a href="index.html">Strona głowna</a></li>
+			<li><a href="map/index.html">Mapa</a></li>
+			<li><a href="oprojekcie.html">Informacje o projekcie</a></li>
+			<li><a href="materialy.html">Dane</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</nav>
+
+	<!--container-->
+	<div class="categories">
+		<header>
+			<h2>Wojskowa Akademia Techniczna</h2>
+			<h3>Wydział Inżynierii Lądowej i Geodezji</h3>
+			<h4>
+				ul. gen. Sylwestra Kaliskiego 2<br>00–908 Warszawa 46<br><br><a href="www.wat.edu.pl">www.wat.edu.pl</a>
+			</h4>
+			<h4>Autorka: st. kpr. pchor. Klaudia RYBACZEK<br> WIG20GG1S4<br><br>Jak dojechać do Wat<br></h4>
+		</header>
+
+		<div id="mapka"> </div>
+
+
+	</div>
+
+	<script src="lib/leaflet/leaflet.js"></script>
+	<script src="main_kontakt.js"></script>
+
+</body>
+
+</html>
